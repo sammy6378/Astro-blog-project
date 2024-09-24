@@ -1,0 +1,35 @@
+
+<body>
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+   
+
+    <h1>My Blog</h1>
+
+    <h2>My first blog post</h2>
+    <div class="wrapper-img">
+    </div>
+    <img src="/me.jpg" alt="my photo" />
+
+    <p>Today I started my first blog post. I'm excited to share my thoughts with the world!</p>
+
+</body>
+
+<style>
+    img {
+    max-width: 100%;
+    /* max-width: 250px; */
+    /* width: 100%; */
+    height: auto;
+    max-height: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+    }
+
+    @media all and (max-width: 480px) {
+        img{
+            width:100%;
+            max-height: 300px;
+        }
+    }
+</style>
