@@ -1,4 +1,7 @@
 ---
+// import Navigation from "../components/Navigation.astro"
+import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro"
 const blogTitle = "My Blog"
 ---
 
@@ -10,8 +13,7 @@ const blogTitle = "My Blog"
     </head>
 
     <body>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
+        <Header />
        
     
         <h1>{blogTitle}</h1>
@@ -28,6 +30,10 @@ const blogTitle = "My Blog"
             <li><a href="/posts/post-2">check Blog</a></li>
             <li><a href="/posts/post-3">check Blog</a></li>
         </ul>
+        <Footer />
+        <script>
+            import '../scripts/menu.js'
+        </script>
     </body>
 </html>
 
